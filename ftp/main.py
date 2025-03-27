@@ -58,7 +58,7 @@ def main():
 
             elif choice == "2":
                 # 지정된 파일 업로드
-                local_path = "D:\\Git\\Application-Security\\ftp\\insecure\\application_security.txt"
+                local_path = "C:\\Users\\어윤규\\Desktop\\git\\Application-Security\\ftp\\insecure\\application_security.txt"
                 if not os.path.exists(local_path):
                     print(f"\n{local_path} 파일이 존재하지 않습니다.")
                     continue

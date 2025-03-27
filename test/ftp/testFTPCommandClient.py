@@ -12,7 +12,7 @@ class TestFTPCommandClient(unittest.TestCase):
     '192.168.100.20', 'cju', 'security',
     # FTP 명령어 시퀀스
     'cd /',               # 루트 디렉토리로 이동
-    'get etc/passwd D:\\Git\\Application-Security\\test\\ftp\\passwd',  # 절대 경로로 지정
+    'get etc/passwd C:\\Users\\어윤규\\Desktop\\git\\Application-Security\\test\\ftp\\passwd',  # 절대 경로로 지정
     'quit'                # 종료
     ])
     def test_download_passwd_file(self, mock_input):
@@ -27,7 +27,7 @@ class TestFTPCommandClient(unittest.TestCase):
         @author     사용자명(이메일)
         @date       2024.02.07
         """
-        target_path = "D:\\Git\\Application-Security\\test\\ftp\\passwd"
+        target_path = "C:\\Users\\어윤규\\Desktop\\git\\Application-Security\\test\\ftp\\passwd"
         
         # 테스트 실행 전 파일이 있다면 삭제
         if os.path.exists(target_path):
